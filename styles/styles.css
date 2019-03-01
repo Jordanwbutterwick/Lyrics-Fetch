@@ -1,0 +1,151 @@
+/* ------Universal Styles------ */
+body {
+  margin: 25px;
+}
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-family: "Cormorant";
+  font-size: 4em;
+}
+
+h2 {
+  font-family: "Cormorant";
+  font-size: 1.6em;
+}
+
+h3 {
+  font-family: "Cormorant";
+}
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+/* nav styles */
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+nav li {
+  min-width: 150px;
+}
+
+nav .link {
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat";
+  font-size: 1.4em;
+}
+
+nav .link:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  background-image: linear-gradient(130deg, #43da7a 0%, #389dcf 100%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+@media (max-width: 600px) {
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  nav li {
+    margin-right: 500px;
+  }
+}
+
+/* --------main content--------- */
+
+.content {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  flex-wrap: wrap;
+}
+
+.content h1 {
+  margin-bottom: 0px;
+}
+
+.icon:hover {
+  color: #75e29d;
+}
+
+.hero {
+  margin: 0;
+  height: 100vh;
+  clip-path: polygon(0px 90%, 100% 70%, 100% 0px, 0px 0px);
+  background-image: linear-gradient(to top, #55408a75 0%, #ffb4ea65 100%),
+    url("../assets/photos/matt-holmes-1329881-unsplash.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-background .link {
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat";
+  font-size: 1.4em;
+}
+
+.hero-background .link:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  background-image: linear-gradient(130deg, #43da7a 0%, #389dcf 100%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* -------lyric styles------- */
+
+.results {
+  display: flex;
+  justify-content: center;
+}
+
+.results p {
+  font-family: "Montserrat";
+}
+
+/* ---------- footer styles ---------- */
+
+.footer {
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 200px;
+  margin-bottom: 250px;
+}
+
+footer a {
+  color: black;
+}
+
+.footer-links {
+  max-width: 1000px;
+  margin: 0, auto;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
